@@ -228,49 +228,95 @@ flutter test --coverage
 
 ## Development Timeline (Retrospective)
 
-> **Note**: All code was implemented in a single session on **2026-10-22**. The milestones below represent a retrospective organization of the work for project planning and documentation purposes. They do not reflect actual historical development dates. The detailed day-by-day entries below are **proposed/planned milestones** for documentation purposes only.
+> **Note**: All code was implemented in a single session on **2026-10-22**. The milestones below represent a retrospective organization of the work for project planning and documentation purposes. They do not reflect actual historical development dates. The detailed entries below are **proposed/planned milestones** for documentation purposes only.
+
+### Commit-to-Milestone Mapping
+
+The 15 commits in this repository map to the following retrospective milestones:
+
+| Commit | Date | Milestone | Phase |
+|--------|------|-----------|-------|
+| `7b685dd` | 2026-10-22 | Project initialization & Flutter configuration | August: Foundation |
+| `4baa1a4` | 2026-10-22 | Data models & mock financial data | August: Foundation |
+| `410ef8f` | 2026-10-22 | Core theme, constants, formatters | August: Foundation |
+| `0fb4a69` | 2026-10-22 | Reusable finance dashboard widgets | August: Foundation |
+| `bb29ff3` | 2026-10-22 | Riverpod state management providers | September: Technical Planning |
+| `5c9c77c` | 2026-10-22 | App entry point & bottom navigation | September: Technical Planning |
+| `433451f` | 2026-10-22 | Home dashboard screen | September: Feature Specifications |
+| `392a472` | 2026-10-22 | Transaction management (CRUD, search, filter) | September: Feature Specifications |
+| `828c82f` | 2026-10-22 | Budget tracking with progress monitoring | September: Feature Specifications |
+| `ac03188` | 2026-10-22 | Analytics & reports with charts | September: Feature Specifications |
+| `1e89c07` | 2026-10-22 | Profile & settings screen | September: Feature Specifications |
+| `b95f0c4` | 2026-10-22 | Widget test with SharedPreferences mock | September: Technical Planning |
+| `c3b6a0c` | 2026-10-22 | Code formatting & cleanup | October: Implementation |
+| `8232d64` | 2026-10-22 | Platform configurations (Android/iOS) | October: Implementation |
+| `d24a2a0` | 2026-10-22 | Documentation & retrospective timeline | October: Implementation |
 
 ### August 2026 — Foundation & Product Design (Proposed)
 
-- **August 3** — Define project vision, objectives, and target users.
-- **August 5** — Gather core personal finance management requirements.
-- **August 7** — Select Flutter technology stack and plan app architecture.
-- **August 9** — Define application structure and folder organization.
-- **August 11** — Establish color palette, typography, and design system.
-- **August 13** — Design dashboard layout and financial summary cards.
-- **August 15** — Plan bottom navigation and screen-to-screen workflows.
-- **August 17** — Define transaction categories and financial data models.
-- **August 19** — Outline income and expense tracking workflows.
-- **August 21** — Plan monthly budgets and spending progress indicators.
-- **August 24** — Define analytics, charts, and reporting requirements.
-- **August 27** — Plan profile, preferences, and settings features.
-- **August 30** — Review the feature scope and organize implementation priorities.
+> **Planning activities** that informed the implementation. No code was written during this period.
+
+| Date | Milestone | Deliverable | Related Commits |
+|------|-----------|-------------|-----------------|
+| Aug 3 | Project Vision | Vision document, objectives, target users | — |
+| Aug 5 | Requirements | Core finance management requirements | — |
+| Aug 7 | Tech Stack | Flutter/Dart selection, architecture plan | — |
+| Aug 9 | App Structure | Folder organization, module boundaries | `7b685dd` |
+| Aug 11 | Design System | Color palette, typography, Material 3 theme | `410ef8f` |
+| Aug 13 | Dashboard Design | Balance cards, summary cards, quick actions | `0fb4a69` |
+| Aug 15 | Navigation Plan | 5-tab bottom nav, screen workflows | `5c9c77c` |
+| Aug 17 | Data Models | Transaction, Budget, Category, User entities | `4baa1a4` |
+| Aug 19 | Income/Expense Flow | Transaction types, categories, workflows | `4baa1a4` |
+| Aug 21 | Budget Planning | Monthly budgets, progress indicators | `4baa1a4` |
+| Aug 24 | Analytics Requirements | Chart types, insights, savings rate | — |
+| Aug 27 | Profile/Settings Plan | Theme, currency, notifications, biometrics | — |
+| Aug 30 | Scope Review | Feature prioritization, implementation order | — |
 
 ### September 2026 — Technical Planning & Feature Specifications (Proposed)
 
-- **September 2** — Finalize the application architecture and component structure.
-- **September 4** — Specify state management and data flow.
-- **September 6** — Define transaction search, filtering, and sorting behavior.
-- **September 8** — Detail budget calculations and spending limit rules.
-- **September 10** — Specify dashboard summaries and financial calculations.
-- **September 12** — Define chart types and analytics reporting requirements.
-- **September 14** — Plan reusable widgets and shared UI components.
-- **September 16** — Specify profile settings and user preferences.
-- **September 18** — Outline input validation and error-handling requirements.
-- **September 20** — Define test scenarios for core app workflows.
-- **September 22** — Review accessibility, responsive layouts, and visual consistency.
-- **September 24** — Organize implementation tasks by feature priority.
-- **September 26** — Review technical dependencies and integration requirements.
-- **September 28** — Conduct a feature specification review.
-- **September 30** — Consolidate project documentation and milestone notes.
+> **Technical specification** activities. Detailed designs that guided implementation.
+
+| Date | Milestone | Deliverable | Related Commits |
+|------|-----------|-------------|-----------------|
+| Sep 2 | Architecture Finalize | Component structure, data flow | `bb29ff3`, `5c9c77c` |
+| Sep 4 | State Management | Riverpod providers, data flow | `bb29ff3` |
+| Sep 6 | Transaction Filtering | Search, filter, sort specifications | `392a472` |
+| Sep 8 | Budget Calculations | Spending limits, progress rules | `828c82f` |
+| Sep 10 | Dashboard Calculations | Monthly totals, savings rate | `433451f` |
+| Sep 12 | Chart Specifications | Bar/donut charts, legends, tooltips | `ac03188` |
+| Sep 14 | Reusable Widgets | Shared UI component library | `0fb4a69` |
+| Sep 16 | Profile/Settings Spec | Theme, currency, notifications | `1e89c07` |
+| Sep 18 | Validation & Errors | Input validation, error handling | `392a472` |
+| Sep 20 | Test Scenarios | Core workflow test cases | `b95f0c4` |
+| Sep 22 | Accessibility Review | Responsive layouts, visual consistency | `c3b6a0c` |
+| Sep 24 | Task Prioritization | Implementation order by feature | — |
+| Sep 26 | Dependencies Review | Third-party packages, integrations | — |
+| Sep 28 | Spec Review | Final feature specification sign-off | — |
+| Sep 30 | Documentation Consolidation | Milestone notes, technical docs | `d24a2a0` |
 
 ### October 2026 (Actual: Implementation & Polish)
 
-- [x] Complete implementation of all features (2026-10-22)
-- [x] Code formatting and static analysis
-- [x] Widget test with SharedPreferences mock
-- [x] Platform configurations (Android/iOS)
-- [x] Documentation and GitHub release
+> **Actual implementation** completed on **2026-10-22** in a single development session.
+
+| Commit | Description |
+|--------|-------------|
+| `7b685dd` | Initialize Flutter project structure |
+| `4baa1a4` | Add data models and mock financial data |
+| `410ef8f` | Implement core theme, constants, and formatters |
+| `0fb4a69` | Build reusable finance dashboard widgets |
+| `bb29ff3` | Set up Riverpod state management providers |
+| `5c9c77c` | Implement app entry point and bottom navigation |
+| `433451f` | Implement home dashboard screen |
+| `392a472` | Add transaction management with search and filtering |
+| `828c82f` | Build budget tracking with progress monitoring |
+| `ac03188` | Implement analytics and reports with charts |
+| `1e89c07` | Add profile and settings screen |
+| `b95f0c4` | Add widget test with SharedPreferences mock |
+| `c3b6a0c` | Apply dart format and clean up test imports |
+| `8232d64` | Add Flutter platform configurations and retrospective timeline |
+| `d24a2a0` | Update README with detailed retrospective milestone timeline |
+
+> **Note**: All code was implemented in a single session on **2026-10-22**. The August/September milestones above represent a **retrospective organization** of the work for project planning and documentation purposes. They do **not** reflect actual historical development dates. The detailed entries are **proposed/planned milestones** for documentation purposes only.
 
 ## License
 
