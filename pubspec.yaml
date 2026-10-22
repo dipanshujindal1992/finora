@@ -1,0 +1,28 @@
+name: finora
+description: "Finora - A modern personal finance management app built with Flutter"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  flutter_riverpod: ^2.4.9
+  fl_chart: ^0.66.0
+  shared_preferences: ^2.2.2
+  intl: ^0.19.0
+  uuid: ^4.2.1
+  google_fonts: ^6.1.0
+  lottie: ^3.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
