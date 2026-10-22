@@ -15,7 +15,8 @@ void main() {
     await tester.pumpWidget(
       ProviderScope(
         overrides: [
-          sharedPreferencesProvider.overrideWithValue(await SharedPreferences.getInstance()),
+          sharedPreferencesProvider
+              .overrideWithValue(await SharedPreferences.getInstance()),
         ],
         child: const FinoraApp(),
       ),

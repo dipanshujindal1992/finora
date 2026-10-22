@@ -411,7 +411,8 @@ class ProfileScreen extends ConsumerWidget {
   }
 
   String _getThemeModeLabel(dynamic mode) {
-    final modeName = mode is ThemeMode ? _getFlutterThemeModeName(mode) : mode.name;
+    final modeName =
+        mode is ThemeMode ? _getFlutterThemeModeName(mode) : mode.name;
     switch (modeName) {
       case 'system':
         return 'System Default';
