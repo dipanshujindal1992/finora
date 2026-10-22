@@ -228,24 +228,44 @@ flutter test --coverage
 
 ## Development Timeline (Retrospective)
 
-> **Note**: All code was implemented in a single session on **2026-10-22**. The milestones below represent a retrospective organization of the work for project planning and documentation purposes. They do not reflect actual historical development dates.
+> **Note**: All code was implemented in a single session on **2026-10-22**. The milestones below represent a retrospective organization of the work for project planning and documentation purposes. They do not reflect actual historical development dates. The detailed day-by-day entries below are **proposed/planned milestones** for documentation purposes only.
 
-### August 2026 (Planned: Foundation)
-- [x] Project initialization and Flutter configuration
-- [x] Core theme system (Material 3 light/dark)
-- [x] Reusable UI widgets (charts, cards, form fields)
-- [x] Data models (Transaction, Budget, Category, User)
-- [x] Mock financial data (24 transactions, 6 budgets)
+### August 2026 — Foundation & Product Design (Proposed)
 
-### September 2026 (Planned: Features)
-- [x] Dashboard with balance, charts, quick actions
-- [x] Bottom navigation (Home, Transactions, Analytics, Budgets, Profile)
-- [x] Transaction management (search, filter, CRUD)
-- [x] Budget tracking with progress monitoring
-- [x] Analytics (charts, insights, savings rate)
-- [x] Profile & Settings (theme, currency, notifications)
+- **August 3** — Define project vision, objectives, and target users.
+- **August 5** — Gather core personal finance management requirements.
+- **August 7** — Select Flutter technology stack and plan app architecture.
+- **August 9** — Define application structure and folder organization.
+- **August 11** — Establish color palette, typography, and design system.
+- **August 13** — Design dashboard layout and financial summary cards.
+- **August 15** — Plan bottom navigation and screen-to-screen workflows.
+- **August 17** — Define transaction categories and financial data models.
+- **August 19** — Outline income and expense tracking workflows.
+- **August 21** — Plan monthly budgets and spending progress indicators.
+- **August 24** — Define analytics, charts, and reporting requirements.
+- **August 27** — Plan profile, preferences, and settings features.
+- **August 30** — Review the feature scope and organize implementation priorities.
+
+### September 2026 — Technical Planning & Feature Specifications (Proposed)
+
+- **September 2** — Finalize the application architecture and component structure.
+- **September 4** — Specify state management and data flow.
+- **September 6** — Define transaction search, filtering, and sorting behavior.
+- **September 8** — Detail budget calculations and spending limit rules.
+- **September 10** — Specify dashboard summaries and financial calculations.
+- **September 12** — Define chart types and analytics reporting requirements.
+- **September 14** — Plan reusable widgets and shared UI components.
+- **September 16** — Specify profile settings and user preferences.
+- **September 18** — Outline input validation and error-handling requirements.
+- **September 20** — Define test scenarios for core app workflows.
+- **September 22** — Review accessibility, responsive layouts, and visual consistency.
+- **September 24** — Organize implementation tasks by feature priority.
+- **September 26** — Review technical dependencies and integration requirements.
+- **September 28** — Conduct a feature specification review.
+- **September 30** — Consolidate project documentation and milestone notes.
 
 ### October 2026 (Actual: Implementation & Polish)
+
 - [x] Complete implementation of all features (2026-10-22)
 - [x] Code formatting and static analysis
 - [x] Widget test with SharedPreferences mock
